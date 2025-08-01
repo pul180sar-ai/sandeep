@@ -22,9 +22,9 @@ def prediction(input_list):
     output = model.predict(pca_input)[0]
 
     if output == 0:
-        return 'Developed'
+        return 'underdeveloped'
     elif output == 1 :
-        return 'Underdeveloped'
+        return 'Developed'
     else:
         return 'Developing'
 
@@ -52,3 +52,4 @@ def main():
 
 if __name__=='__main__':
     main()
+
